@@ -17,16 +17,33 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin: 0;
-	min-height: 100vh;
-    font-size: 28px;
+	min-height: 100vh; 
     font-family: 'Manrope', sans-serif;
+    background-color: var(--dark-blue);
 }
 
+h1 {
+    font-size: 15px;
+    color: var(--neon-green);
+}
 
+.full-app {
+    background-color: var(--dark-grayish-blue);
+}
+
+.quote {
+    font-size: 28px;
+    color: var(--light-cyan);
+}
+
+.line-desktop {
+    display: none;
+}
 
 .attribution {
 	font-size: 11px;
 	text-align: center;
+    margin-top: 30px;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
