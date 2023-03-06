@@ -25,30 +25,67 @@ body {
 h1 {
     font-size: 15px;
     color: var(--neon-green);
+    font-weight: 100;
 }
 
 .full-app {
     background-color: var(--dark-grayish-blue);
+    padding: 15px;
+    height: 280px;
+    width: 320px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .quote {
     font-size: 28px;
     color: var(--light-cyan);
+    padding: 20px 10px 20px 10px;
+}
+
+.line-mobile {
+    position: absolute;
+    top: 330px;
+    left: 40px;
 }
 
 .line-desktop {
     display: none;
 }
 
-.dice {
+.dice-container {
     background-color: var(--neon-green);
+    position: absolute;
+    top: 375px;
+    left: 153px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.dice {
+    position: relative;
+    top: 22px;
+}
+
+footer {
+    text-align: center;
 }
 
 .attribution {
 	font-size: 11px;
 	text-align: center;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+.fa-brands {
+   font-size: 30px;
+   margin: 30px;
+   color: var(--neon-green);
 }
