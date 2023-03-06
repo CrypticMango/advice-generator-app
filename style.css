@@ -40,6 +40,10 @@ h1 {
     display: none;
 }
 
+.dice {
+    background-color: var(--neon-green);
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
