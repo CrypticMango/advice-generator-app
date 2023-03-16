@@ -1,8 +1,8 @@
-import {axios} from 'axios';
+import axios from 'axios';
 
 let url = 'https://api.adviceslip.com/advice';
 
-axios.get(url).then(displayAdvice);
+
 
 /*console.log(fetch('https://api.adviceslip.com/advice'));
 
