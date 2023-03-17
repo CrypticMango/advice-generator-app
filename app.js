@@ -1,6 +1,5 @@
-import axios from 'axios';
-
-let url = 'https://api.adviceslip.com/advice';
+import axios from 'axios'
+//let url = 'https://api.adviceslip.com/advice';
 
 
 
@@ -24,4 +23,3 @@ fetch('https://api.adviceslip.com/advice', {
     fetch('https://jsonplaceholder.typicode.com/posts/1/')
       .then(response => response.json())
       .then(json => console.log(json))*/
-
