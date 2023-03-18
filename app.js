@@ -13,3 +13,10 @@ fetch("https://api.adviceslip.com/advice")
     adviceId.innerHTML = `ADVICE #${id}`;
    
   })
+
+  let button = document.querySelector(".dice-container");
+  button.addEventListener("click", newAdvice);
+
+  function newAdvice() {
+    location.reload();
+  }
