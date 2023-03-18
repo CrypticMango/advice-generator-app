@@ -31,13 +31,13 @@ h1 {
 .full-app {
     background-color: var(--dark-grayish-blue);
     padding: 15px;
-    height: 280px;
+    height: 100%;
     width: 320px;
     border-radius: 8px;
     text-align: center;
 }
 
-.quote {
+.quote-container {
     font-size: 28px;
     color: var(--light-cyan);
     padding: 20px 10px 20px 10px;
@@ -64,6 +64,11 @@ h1 {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+}
+
+.dice-container:hover {
+    box-shadow: 0px 0px 10px var(--neon-green);
+    cursor: pointer;
 }
 
 .dice {

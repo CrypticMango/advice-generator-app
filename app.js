@@ -1,25 +1,15 @@
-import axios from 'axios'
-//let url = 'https://api.adviceslip.com/advice';
-
-
-
-/*console.log(fetch('https://api.adviceslip.com/advice'));
-
-fetch('https://api.adviceslip.com/advice', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-  body: JSON.stringify ({
-    name: 'user 1'
+fetch("https://api.adviceslip.com/advice")
+  .then((response) => {
+    return response.json();
   })
-})
-    .then(res => {
-      return  res.json()
-    })
-    
-    .then(data => console.log(data))
-
-    fetch('https://jsonplaceholder.typicode.com/posts/1/')
-      .then(response => response.json())
-      .then(json => console.log(json))*/
+  .then((data) => {
+   
+    let quote = data.slip.advice;
+    let advice = document.querySelector(".quote-container");
+    advice.innerHTML = `"${quote}"`
+  
+    let id = data.slip.id;
+    let adviceId = document.querySelector(".advice-id");
+    adviceId.innerHTML = `ADVICE #${id}`;
+   
+  })
