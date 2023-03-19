@@ -39,10 +39,16 @@ h1 {
     margin-top: 70px;
 }
 
+.advice-id {
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
 .quote-container {
     font-size: 28px;
     color: var(--light-cyan);
     padding: 20px 10px 20px 10px;
+    font-family: 'Manrope', sans-serif;
 }
 
 .line-mobile {
@@ -95,4 +101,26 @@ footer {
    font-size: 30px;
    margin: 30px;
    color: var(--neon-green);
+}
+
+@media (min-width: 1300px) {
+
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    .full-app {
+        width: 500px;
+    }
+
+    .line-desktop {
+        display:block;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .line-mobile {
+        display:none;
+    }
 }
